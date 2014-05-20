@@ -1,11 +1,11 @@
-function y = read_beat(filename, delimiter, track)
-    data = read_mixed_csv(filename,delimiter);
+function y = read_beat(data, track)
+    
     divisions = data(1,6); % number of divisions per quarter note
     rate = 4/str2double(char(divisions)); % rate of conversion between midi time and network 
                         % time
     d = data(char(data(:,1)) == int2str(track),:);
     timesteps = rate*str2double(d(end,2));
-    y = zeros(1,    timesteps);
+    y = zeros(1, timesteps);
     i = 1;
     while i < size(d,1)
         while (strcmp(char(d(i,3)),'Note_on_c') == 0)
@@ -25,7 +25,7 @@ function y = read_beat(filename, delimiter, track)
             i = i+1;
             continue;
         end
-        y(start) = note;
+        y(start) = 1;
         
         i = i+1;   
     end

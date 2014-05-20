@@ -11,16 +11,16 @@ function y = write_notes(fname,division,leadNotes,leadDur,accompNotes,accompDur)
     fprintf(fd, '1, 0, Control_c, 1, 0, 0\r\n');
     fprintf(fd, '1, 0, Control_c, 1, 32, 0\r\n');
     
-    fprintf(fd, '1, 0, Program_c, 1, 33\r\n'); % Flute
+    fprintf(fd, '1, 0, Program_c, 1, 33\r\n'); % Bass
     
-    fprintf(fd, '1, 0, Control_c, 1, 10, 64\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 93, 0\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 7, 100\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 91, 0\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 64, 0\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 91, 52\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 10, 70\r\n');
-    fprintf(fd, '1, 0, Control_c, 1, 7, 95\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 10, 64\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 93, 0\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 7, 100\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 91, 0\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 64, 0\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 91, 52\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 10, 70\r\n');
+    %fprintf(fd, '1, 0, Control_c, 1, 7, 95\r\n');
     i = 1;
     while (i <= size(accompNotes,2))
         time = round(rate*(i-1));
@@ -40,7 +40,7 @@ function y = write_notes(fname,division,leadNotes,leadDur,accompNotes,accompDur)
     fprintf(fd, '2, 0, Start_track, , , \r\n');
     fprintf(fd, '2, 0, Title_t, Electric Guitar, , \r\n');
     fprintf(fd, '2, 0, Control_c, 2, 0, 0\r\n');
-    fprintf(fd, '2, 0, Program_c, 2, 84,\r\n'); % Guitar
+    fprintf(fd, '2, 0, Program_c, 2, 1,\r\n'); % Piano
     %fprintf(fd, '2, 0, Control_c, 2, 10, 64\r\n');
     %fprintf(fd, '2, 0, Control_c, 2, 93, 0\r\n');
     %fprintf(fd, '2, 0, Control_c, 2, 7, 100\r\n');
