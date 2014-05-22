@@ -1,7 +1,7 @@
 jammy
 =====
 
-A musical accompaniment system, trained using Echo State Networks to listen to a leading track (default: guitar) and play along by generating an accompanying track (default: bass). The code is not yet in a solid state (only minor error checking), and it is what I am using for my Bachelor Thesis.
+A musical accompaniment system, trained using Echo State Networks to listen to a leading track (default: guitar) and play along by generating an accompanying track (default: bass). The code is what I used for my bachelor thesis and I am doing only minor error checking
 
 
 <b> File structure </b>: 
@@ -13,7 +13,7 @@ A musical accompaniment system, trained using Echo State Networks to listen to a
 
 <b> /music/midi/ </b>: This is where I keep midi files
 
-<b>/music/Sample Results/ </b>: samples of melodies produced by the system, visualized using the Music Animation Machine. The top (purple) line is the leading track, the bbttom one is the network produced accompanying track.
+<b>/music/Sample Results/ </b>: samples of melodies produced by the system, visualized using the Music Animation Machine. The top (purple) line is the leading track, the bottom one is the network produced accompanying track.
 
 
 <b> Prerequisites </b>:
