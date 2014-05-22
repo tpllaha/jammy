@@ -22,6 +22,7 @@ A musical accompaniment system, trained using Echo State Networks to listen to a
 Besides matlab, the tools <a href='http://www.fourmilab.ch/webtools/midicsv/'>midicsv and csvmidi</a> are needed to convert between midi and csv files. The script expects csv files created by midicsv.
 
 <b> Main Scripts </b>: 
+=====
 
 <b>read\_mixed\_csv.m </b>: Reads the midi information from a csv file (the result of converting the midi file to csv using midicsv) into matlab structures.
 
@@ -38,7 +39,7 @@ Besides matlab, the tools <a href='http://www.fourmilab.ch/webtools/midicsv/'>mi
 <b> select.m </b>: Interprets the network output and selects the next note on the accompanying track. The third argument specifies the type of selection (1 : deterministic, 0: non-deterministic selection)
 
 <b> Limitations </b>: 
+=====
 
-
-1. For each of the 2 instruments the system currently supports only 1 voice (1 line of melody). This also means that chords are not yet supported. Whenever chords appear in the train/test data, only the top note is selected.
+1. For each of the 2 instruments the system currently supports only 1 voice (1 line of melody). This means that chords are not yet supported. Whenever chords appear in the train/test data, only the top note is selected.
 
