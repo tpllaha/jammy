@@ -5,6 +5,7 @@ A musical accompaniment system, trained using Echo State Networks to listen to a
 
 
 <b> File structure </b>: 
+=====
 
 <b> /music/ </b> : main scripts
 
@@ -16,6 +17,7 @@ A musical accompaniment system, trained using Echo State Networks to listen to a
 
 
 <b> Prerequisites </b>:
+=====
 
 Besides matlab, the tools <a href='http://www.fourmilab.ch/webtools/midicsv/'>midicsv and csvmidi</a> are needed to convert between midi and csv files. The script expects csv files created by midicsv.
 
