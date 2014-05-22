@@ -21,6 +21,8 @@ Besides matlab, the tools <a href='http://www.fourmilab.ch/webtools/midicsv/'>mi
 
 <b> Main Scripts </b>: 
 
+<b>read\_mixed\_csv.m </b>: Reads the midi information from a csv file (the result of converting the midi file to csv using midicsv) into matlab structures.
+
 <b>music.m </b>: To train the network (file names are hard-coded) All training and testing data should be in 1 file.
 
 <b> continue_run.m </b>: To run the network. In the top rows it is determined which portion of the data will be used as testing data.
