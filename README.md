@@ -1,8 +1,9 @@
 jammy
 =====
 
-A musical accompaniment system, trained using Echo State Networks to listen to a leading track (default: guitar) and play along by generating an accompanying track (default: bass). The code is what I used for my bachelor thesis and I am doing only minor error checking
+A musical accompaniment system, trained using Echo State Networks to listen to a leading track (default: guitar) and play along by generating an accompanying track (default: bass). 
 
+I wrote this code during my Bachelor Thesis project and I am doing only minor error checking. It was only used for experimental purposes, so it may fail to fulfill even some of the most basic engineering requirements. I have only tried to make it easy to change the network parameters. Long story short, it's still fragile and needs to be used with care.
 
 <b> File structure </b>: 
 =====
